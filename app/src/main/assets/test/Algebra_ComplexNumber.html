@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+<h3>Definitions:</h3>
+    <p style="margin-left:5px">A complex number is written as $ a + b\,i $ where $ a $ and $ b $ are real numbers an $ i $, called the imaginary unit, has the property that $ i^2 = -1 $.
+
+        The complex numbers $ z = a + b\,i $ and $ \overline{z} = a - b\,i $ are called complex conjugate of each other. </p>
+    <br>
+    <hr style="width:99%">
+
+   <h3> Formulas:</h3>
+
+    <h4>Equality of complex numbers</h4>
+    $$ a + b\,i = c + d\,i \Longleftrightarrow a = c ~~and~~ b = d $$
+    <hr style="width:70%">
+    <h4>Addition of complex numbers</h4>
+    $$ (a + b\,i) + (c + d\,i) = (a + c) + (b + d)\,i $$
+    <hr style="width:70%">
+    <h4> Subtraction of complex numbers</h4>
+    $$ (a + b\,i) - (c + d\,i) = (a - c) + (b - d)\,i $$
+    <hr style="width:70%">
+    <h4>Multiplication of complex numbers</h4>
+    $$ (a + b\,i)\cdot(c + d\,i) = (ac - bd) + (ad + bc)\,i $$
+    <hr style="width:70%">
+    <h4> Division of complex numbers</h4>
+    $$ \frac{a + b\,i}{c + d\,i} = \frac{a + b\,i}{c + d\,i}\cdot\frac{c - d\,i}{c - d\,i} = \frac{ac + bd}{c^2 + d^2} + \frac{bc - ad}{c^2 + d^2} \, i$$
+    <hr style="width:70%">
+    <h4>Polar form of complex numbers</h4>
+    $$ a + b\,i = r\cdot(\cos\theta + i\,\sin\theta) $$
+    <hr style="width:70%">
+    <h4> Multiplication and division of complex numbers in polar form</h4>
+    $$\left[r_1\left(\cos\theta_1 + i \cdot \sin\theta_1\right)\right] \cdot \left[r_2\left(\cos\theta_2 + i \cdot \sin\theta_2\right)\right] = r_1 \cdot r_2 \left[ \cos\left(\theta_1+\theta_2\right) + i \cdot \sin\left(\theta_1+\theta_2\right) \right]$$
+    $$\frac{r_1\left(\cos\theta_1 + i\,\sin\theta_1\right)}{r_2\left(\cos\theta_2 + i\,\sin\theta_2\right)}= \frac{r_1}{r_2} \left[\cos\left(\theta_1-\theta_2\right) + i \cdot \sin\left(\theta_1-\theta_2\right)\right]$$
+    <hr style="width:70%">
+    <h4> De Moivre's theorem</h4>
+    $$ \left[r \left( \cos\theta + i\,\sin\theta \right) \right]^n = r^n \left( \cos ( n\theta) + i\,\sin (n\theta) \right)$$
+    <hr style="width:70%">
+    <h4> Roots of complex numbers</h4>
+    $$ \left[r \left( \cos\theta + i\,\sin\theta \right) \right]^{1/n} = r^{1/n} \left( \cos \frac{\theta + 2k\pi}{n} + i\,\sin \frac{\theta + 2k\pi}{n} \right) ~~ k=0,1,\dots, n-1 $$
+    <hr style="width:70%">
+</div>
+    </div>
+</body>
+</html>

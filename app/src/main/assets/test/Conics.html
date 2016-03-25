@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+        <h3>The Parabola Formulas:</h3>
+        The standard formula of a parabola
+        $$ y^2 = 2\,p\,x $$
+
+        Parametric equations of the parabola:
+        $$ \begin{aligned} x &=2\,p\,t^2 \\ y &= 2\,p\,t \end{aligned} $$
+
+        Tangent line in a point $D(x_0, y_0)$ of a parabola $y^2 = 2px $ is :
+        $$ y_0\,y=p\left(x+x_0\right) $$
+
+        Tangent line with a given slope $m$:
+        $$ y = m\,x + \frac{p}{2m} $$
+
+       <h4> Tangent lines from a given point</h4>
+
+        Take a fixed point $P(x_0, y_0)$. The equations of the tangent lines are:
+        $$ \begin{aligned} y-y_0 &= m_1(x-x_0) \\ y-y_0 &= m_2(x-x_0) \\ m_1 &= \frac{y_0 + \sqrt{y_0^2 - 2px_0}}{2x_0} \\ m_2 &= \frac{y_0 - \sqrt{y_0^2 - 2px_0}}{2x_0} \end{aligned} $$
+        <hr style="width:100%">
+
+        <h3>The Ellipse Formulas: </h3>
+        The set of all points in the plane, the sum of whose distances from two fixed points, called the foci, is a constant.
+        <br>
+        The standard formula of a ellipse:
+        $$ \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 $$
+
+        Parametric equations of the ellipse:
+        $$ \begin{aligned} x &= a\,\cos t \\ y &= b\,\sin t \end{aligned} $$
+
+        Tangent line in a point $D(x_0, y_0)$ of a ellipse:
+        $$ \frac{x_0\,x}{a^2} + \frac{y_0\,y}{b^2} = 1 $$
+
+        Eccentricity of the ellipse:
+        $$ e = \frac{\sqrt{a^2-b^2}}{a} $$
+
+        Foci of the ellipse:
+        $$ \begin{aligned} & \text{if}~a \geq b \Longrightarrow F_1\left(-\sqrt{a^2-b^2},0\right)~~ F_2\left(\sqrt{a^2-b^2},0\right) \\ & \text{if}~a < b \Longrightarrow F_1\left(0, -\sqrt{b^2-a^2}\right) ~~ F_2\left(0, \sqrt{b^2-a^2}\right) \end{aligned} $$
+
+        Area of the ellipse:
+        $$ A = \pi \cdot a \cdot b $$
+        <hr style="width:100%">
+        <h3>The Hyperbola Formulas</h3>
+        The set of all points in the plane, the difference of whose distances from two fixed points, called the foci, remains constant.
+        <br>
+        The standard formula of a hyperbola:
+        $$ \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1 $$
+
+        Parametric equations of the Hyperbola:
+        $$ \begin{aligned} x &= \frac{a}{\sin t} \\ y &= \frac{b\,\sin t}{\cos t} \end{aligned}$$
+
+        Tangent line in a point $D(x_0, y_0)$ of a Hyperbola:
+        $$ \frac{x_0x}{a^2} - \frac{y_0y}{b^2} = 1 $$
+
+        Foci:
+        $$ \begin{aligned} & \text{if}~a \geq b ~~then~~ F_1\left(-\sqrt{a^2+b^2},0\right)~~ F_2\left(\sqrt{a^2+b^2},0\right) \\ & \text{if}~a < b ~~then~~ F_1\left(0, -\sqrt{a^2+b^2}\right) ~~ F_2\left(0, \sqrt{a^2+b^2}\right) \end{aligned} $$
+
+        Asymptotes:
+        $$ \begin{aligned} & \text{if } a \geq b ~~then~~ y = \frac{b}{a}x \text{ and } y = -\frac{b}{a}x \\ & \text{if } a < b ~~then~~ y = \frac{a}{b}x \text{ and } y = -\frac{a}{b}x \\ \end{aligned} $$
+    </div>
+
+</div>
+</body>
+</html>

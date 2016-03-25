@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+   <h3> Factoring Formulas</h3>
+
+    <hr style="width:100%">
+    <div class="center">
+    <img src="factor.gif" style="width:200px;height:200px"/>
+    </div>
+<p>
+$$a^2 - b^2 = (a-b)(a+b)$$
+$$a^3 - b^3 = (a-b)\left(a^2 + ab + b^2\right)$$
+$$ a^3 + b^3 = (a+b)\left(a^2 - ab + b^2\right) $$
+$$ a^4 - b^4 = (a-b)(a+b)\left(a^2 + b^2\right) $$
+$$ a^5 - b^5 = (a-b)\left(a^4 + a^3b + a^2b^2 + ab^3 + b^4\right) $$
+</p>
+        <hr style="width:100%">
+    <h3>Product Formulas</h3>
+    <p>
+
+        $$ (a + b)^2 = a^2 + 2ab + b^2 $$
+        $$ (a - b)^2 = a^2 - 2ab + b^2 $$
+        $$ (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3 $$
+        $$ (a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3 $$
+        $$ (a + b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4 $$
+        $$ (a - b)^4 = a^4 - 4a^3b + 6a^2b^2 - 4ab^3 + b^4 $$
+        $$ (a + b + c)^2 = a^2 + b^2 + c^2 +2ab + 2ac + 2bc $$
+        $$ (a + b + c + ...)^2 = a^2 + b^2 + c^2 + ... + 2(ab + ac + bc + ... ) $$
+    </p>
+    <h3>Binomial Theorem</h3>
+        <hr style="width:100%">
+    <p>
+        $$(a+b)^n = \sum_{k=0}^{n}\binom{n}{k}a^{n-k}b^k$$
+        where $\binom{n}{k} = \frac{n!}{k!(n-k)!}$ is binomial coefficient.
+        <br>
+        For example $(a + b)^5 = a^5 + 5 a^4 b + 10 a^3 b^2 + 10 a^2 b^3 + 5 a b^4 + b^5$ , with coefficients $1 = \binom{5}{0}$ $5 = \binom{5}{1}$ $10 = \binom{5}{2}$ etc.
+
+    </p>
+</div>
+
+</div>
+</body>
+</html>

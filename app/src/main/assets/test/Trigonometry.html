@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width:60%;
+
+        }
+
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+
+        <h3>Right-Triangle Definitions:</h3>
+        <hr style="width:100%">
+        <div class="center">
+        <img src="sincos.png" >
+        </div>
+        $$ \sin \alpha = \frac{\text{Opposite}}{\text{Hypotenuse}} $$
+        $$ \cos \alpha = \frac{\text{Adjacent}}{\text{Hypotenuse}} $$
+        $$ \tan \alpha = \frac{\text{Opposite}}{\text{Adjacent}} $$
+        $$ \csc \alpha = \frac{1}{\sin\alpha} = \frac{\text{Hypotenuse}}{\text{Opposite}} $$
+        $$ \sec \alpha = \frac{1}{\cos\alpha} = \frac{\text{Hypotenuse}}{\text{Adjacent}} $$
+        $$ \cot \alpha = \frac{1}{\tan\alpha} = \frac{\text{Adjacent}}{\text{Opposite}} $$
+        <hr style="width:100%">
+        <h3>Reduction Formulas:</h3>
+    <div class="center">
+        <img src="tri.png" >
+    </div>
+        $$ \sin(-x) = -\sin(x) $$
+        $$ \cos(-x) = \cos(x) $$
+        $$ \sin\left(\frac{\pi}{2} - x\right) = \cos(x) $$
+        $$ \cos\left(\frac{\pi}{2} - x\right) = \sin(x) $$
+        $$ \sin\left(\frac{\pi}{2} + x\right) = \cos(x) $$
+        $$ \cos\left(\frac{\pi}{2} + x\right) = -\sin(x) $$
+        $$ \sin(\pi - x) = \sin(x) $$
+        $$ \cos(\pi - x) = -\cos(x) $$
+        $$ \sin(\pi + x) = -\sin(x) $$
+        $$ \cos(\pi + x) = -\cos(x) $$
+        <hr style="width:100%">
+
+        <h3>Basic Identities:</h3>
+
+        $$ \sin^2x + \cos^2x = 1 $$
+        $$ \tan^2x + 1 = \frac{1}{\cos^2x} $$
+        $$ \cot^2x + 1 = \frac{1}{\sin^2x} $$
+        <hr style="width:100%">
+        <h3>Sum and Difference Formulas: </h3>
+        $$ \sin(\alpha + \beta) = \sin\alpha \cdot \cos \beta + \sin\beta \cdot \cos\alpha $$
+        $$ \sin(\alpha - \beta) = \sin\alpha \cdot \cos \beta - \sin \beta \cdot \cos\alpha $$
+        $$ \cos(\alpha + \beta) = \cos\alpha \cdot \cos \beta - \sin\alpha \cdot \cos\beta $$
+        $$ \cos(\alpha - \beta) = \cos\alpha \cdot \cos \beta + \sin\alpha \cdot \cos\beta $$
+        $$ \tan(\alpha + \beta) = \frac{ \tan\alpha + \tan\beta}{1 - \tan\alpha \cdot \tan\beta } $$
+        $$ \tan(\alpha - \beta) = \frac{ \tan\alpha - \tan\beta}{1 + \tan\alpha \cdot \tan\beta } $$
+        <hr style="width:100%">
+        <h3>Double Angle and Half Angle Formulas:</h3>
+        $$ \sin(2\,\alpha) = 2 \cdot \sin\alpha \cdot \cos\alpha $$
+        $$ \cos(2\,\alpha) = \cos^2\alpha - \sin^2\alpha $$
+        $$ \tan(2\,\alpha) = \frac{2\,\tan\alpha}{1 - \tan^2\alpha} $$
+        $$ \sin \frac{\alpha}{2} = \pm \sqrt{\frac{1-\cos\alpha}{2}} $$
+        $$ \cos \frac{\alpha}{2} = \pm \sqrt{\frac{1+\cos\alpha}{2}} $$
+        $$\tan \frac{\alpha}{2} = \frac{1 - \cos\alpha}{\sin\alpha} = \frac{\sin\alpha}{1 - \cos\alpha} $$
+        $$\tan \frac{\alpha}{2} = \pm \sqrt{\frac{1 + \cos\alpha}{1 - \cos\alpha} } $$
+        <hr style="width:100%">
+        <h3>Other Useful Trig Formulas: </h3>
+        <h4>Law of sines:</h4>
+        $$ \frac{\sin\alpha}{\alpha} = \frac{\sin\beta}{\beta} = \frac{\sin\gamma}{\gamma} $$
+        <h4>Law of cosines:</h4>
+        $$ \begin{aligned} a^2 = b^2 + c^2 - 2\cdot b\cdot c\cdot \cos\alpha \\ b^2 = a^2 + c^2 - 2\cdot a\cdot c\cdot \cos\beta \\ c^2 = a^2 + b^2 - 2\cdot a\cdot b\cdot \cos\gamma \end{aligned} $$
+
+        <h4>Area of triangle:</h4>
+        $$ A = \frac{1}{2} a\,b\, \sin\gamma $$
+
+
+        <hr style="width:100%">
+
+
+
+</div>
+</body>
+</html>

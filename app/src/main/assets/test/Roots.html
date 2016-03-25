@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+<div id="hide_page" style="visibility:hidden">
+<div class="center">
+    <h3>Notation:</h3>
+
+    $a , b $ : bases $ ( a \geq 0 , b \geq 0 ~~\text{if} ~~ n = 2k )$<br>
+
+    $n , m $: powers
+    <hr style="width:100%">
+    <h3>Formulas</h3>
+    $$ \left( \sqrt[\scriptstyle n]{a} \right)^n = a $$
+    $$ \left( \sqrt[\scriptstyle n]{a} \right)^m = \sqrt[\scriptstyle n]{a^m} $$
+    $$ \sqrt[\scriptstyle m]{ \sqrt[\scriptstyle n]{a}} = \sqrt[\scriptstyle {n m}]{a} $$
+    $$ \left( \sqrt[\scriptstyle n]{a^m} \right)^p = \sqrt[\scriptstyle n]{a^{n p}} $$
+    $$ \sqrt[\scriptstyle n]{a^m} = \sqrt[\scriptstyle n p]{a^{n p}} $$
+    $$ \frac{1}{\sqrt[\scriptstyle n]{a}} = \frac{ \sqrt[\scriptstyle n]{a^{n-1}}}{a} $$
+    $$ \sqrt[\scriptstyle n]{ab} = \sqrt[\scriptstyle n]{a} \cdot \sqrt[\scriptstyle n]{b} $$
+    $$ \sqrt[\scriptstyle n]{\frac{a}{b}} = \frac{\sqrt[\scriptstyle n]{a}}{\sqrt[\scriptstyle n]{b}} $$
+    $$ \frac{\sqrt[\scriptstyle n]{a}}{\sqrt[\scriptstyle m]{b}} = \sqrt[\scriptstyle {nm}]{\frac{a^m}{b^n}} $$
+    $$ \sqrt[\scriptstyle n]{a} \cdot \sqrt[\scriptstyle m]{b} = \sqrt[\scriptstyle{nm}]{a^m b^n} $$
+    $$ \sqrt{ a \pm \sqrt{b}} = \sqrt{ \frac{a + \sqrt{a^2 - b}}{2}} \pm \sqrt{ \frac{a - \sqrt{a^2 - b}}{2}} $$
+    $$ \frac{1}{\sqrt{a} \pm \sqrt{b}} = \frac{\sqrt{a} \mp \sqrt{b}}{a-b} $$
+
+    <hr style="width:100%">
+</div>
+
+
+
+</div>
+</body>
+</html>

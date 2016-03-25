@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+   <h3> Rational Functions</h3>
+
+        $$\int^\infty_0 \frac{dx}{x^2+a^2} = \frac{\pi}{2a}$$
+        $$\int^\infty_0 \frac{x^{p-1}\,dx}{1+x} = \frac{\pi}{\sin (p\pi)} , ~ 0 < p < 1$$
+        $$ \int^\infty_0 \frac{x^m}{x^n + a^n} = \frac{\pi a^{m + 1 -n}}{n\,\sin[(m+1)\pi/n]}, ~0 < m + 1 < n $$
+        $$ \int^a_0 \frac{dx}{\sqrt{a^2 - x^2}} = \frac{\pi}{2}$$
+        $$ \int^a_0 \sqrt{a^2 - x^2}\,dx = \frac{\pi\,a^2}{4}$$
+        $$ \int^a_0 x^m \left(a^n - x^n\right)^p\,dx = \frac{a^{m+1+np}~\Gamma[(m+1)/n]~\Gamma(p+1) }{n\,\Gamma[(m+1)/n + p +1]}$$
+        <hr style="width:100%">
+
+</div>
+
+</div>
+</body>
+</html>

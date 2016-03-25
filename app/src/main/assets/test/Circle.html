@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+        .center1 {
+
+        margin-right: auto;
+        width: 40%;
+
+        }
+        .center2 {
+        margin-left: auto;
+
+        width: 40%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+     <h3>Equation of a circle :</h3>
+        In an $x-y$ coordinate system, the circle with center $(a, b)$ and radius $r$ is the set of all points $(x, y)$ such that:
+        $$ (x-a)^2 + (y-b)^2 =r^2 $$
+
+        <h4>Circle centered at the origin:</h4>
+        $$ x^2 + y^2 = r^2 $$
+
+        <h4>Parametric equations</h4>
+        $$ \begin{aligned} x &= a + r\,\cos t \\ y&= b + r\,\sin t \end{aligned} $$
+
+        where $t$ is a parametric variable.
+
+        <h4>In polar coordinates the equation of a circle is:</h4>
+        $$ r^2 - 2\cdot r \cdot r_0\cdot cos(\Theta - \phi ) + r_0^2 = a^2 $$
+        <hr style="width:100%">
+        <h3>Area of a circle </h3>
+
+        $$ A = r^2\pi $$
+        <hr style="width:100%">
+        <h3>Circumference of a circle </h3>
+        $$ C = \pi \cdot d = 2\cdot \pi \cdot r $$
+        <hr style="width:100%">
+        <h3>Theorems: </h3>
+        (Chord theorem) The chord theorem states that if two chords, $CD$ and $EF$, intersect at $G$, then:
+        $$ CD \cdot DG = EG \cdot FG $$
+        <img src="tangent.gif" class="center1"/>
+        <img src="chord.gif" class="center2"/>
+        <br>
+        (Secant - secant theorem) If two secants, $DG$ and $DE$, also cut the circle at $H$ and $F$ respectively, then:
+        $$ DH \cdot DG = DF \cdot DE $$
+
+        (Tangent chord property) The angle between a tangent and chord is equal to the subtended angle on the opposite side of the chord.
+        <hr style="width:100%">
+
+    </div>
+
+</div>
+</body>
+</html>

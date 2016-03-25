@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+        <h3>Advanced formulas </h3>
+        $$\int^\pi_0 \sin (mx) \cdot \sin (nx)\,dx = \left\{ \begin{array}{l l} 0 & \quad m , n \text{ integers and } m\ne n \\ \pi/2 & \quad m , n \text{ integers and } m = n \end{array} \right. $$
+        $$\int^\pi_0 \cos (mx) \cdot \cos (nx)\,dx = \left\{ \begin{array}{l l} 0 & \quad m , n \text{ integers and } m\ne n \\ \pi/2 & \quad m , n \text{ integers and } m = n \end{array} \right. $$
+        $$\int^\pi_0 \sin (mx) \cdot \cos (nx)\,dx = \left\{ \begin{array}{l l} 0 & \quad m , n \text{ integers and } m + n \text{ odd} \\ 2m/(m^2 - n^2) & \quad m , n \text{ integers and } m + n \text{ even} \end{array} \right. $$
+        $$ \int^{\pi/2}_0 \sin^{2m}x\,dx = \int^{\pi/2}_0 \cos^{2m}x\,dx = \frac{1\cdot3\cdot5\dots 2m-1}{2\cdot 4 \cdot 6 \dots 2m} \frac{\pi}{2} $$
+        $$ \int^{\pi/2}_0 \sin^{2m+1}x\,dx = \int^{\pi/2}_0 \cos^{2m+1}x\,dx = \frac{2\cdot 4 \cdot 6 \dots 2m}{1 \cdot 3 \cdot 5 \dots 2m + 1}$$
+        $$ \int^{\pi}_0 \sin^{2p-1}x\,\cos^{2q-1}x\,dx = \frac{\Gamma(p)\,\Gamma{q}}{2\,\Gamma(p+q)} $$
+        $$\int^\infty_0 \frac{\sin (px) \cdot \cos (qx)}{x} \,dx = \left\{ \begin{array}{l l l} ~0 & p > q >0 \\ \pi/2 & 0 < p < q \\ \pi/4 & p = q > 0 \\ \end{array} \right. $$
+        $$\int^\infty_0 \frac{\sin (px) \cdot \sin (qx)}{x^2} \,dx = \left\{ \begin{array}{l l l} \pi\,p/2 & 0 < p \le q \\ \pi\,q/2 & p \ge q > 0 \\ \end{array} \right. $$
+        $$ \int^\infty_0 \frac{\cos (mx)}{x^2 + a^2}dx = \frac{\pi}{2a}e^{-ma} $$
+        $$ \int^\infty_0 \frac{x\,\sin (mx)}{x^2 + a^2} dx = \frac{\pi}{2}e^{-ma} $$
+        $$\int^\infty_0 \frac{\sin (mx)}{x\left(x^2 + a^2\right)} dx = \frac{\pi}{2a^2}\left(1-e^{-ma}\right)$$
+        $$\int^{2\pi}_0 \frac{dx}{(a + b\,\sin x)^2} = \int^{2\pi}_0 \frac{dx}{(a + b\,\cos x)^2} = \frac{2\pi\,a}{(a^2 - b^2)^{3/2}}$$
+        $$\int^{2\pi}_0 \frac{dx}{1 - 2a\,\cos x + a^2} = \frac{2\pi}{1 - a^2}, ~~ 0 < a < 1$$
+        $$\int^{\pi}_0 \frac{x\,\sin x\,dx}{1 - 2a\,\cos x + a^2} = \left\{ \begin{array}{l l l} \frac{\pi}{a} ln(1+a) & |a| < 1 \\ \pi \, ln(1 + \frac{1}{a}) & |a| > 1 \\ \end{array} \right. $$
+        $$\int^{\pi}_0 \frac{\cos (mx)\,dx}{1 - 2a\,\cos x + a^2} = \frac{\pi a^m}{1 - a^2}, ~~ a^2 < 1$$
+        $$\int^\infty_0 \sin (ax^n)\,dx = \frac{1}{na^{1/n}} \Gamma(1/n)\,\sin \frac{\pi}{2n} , ~~ n > 1 $$
+        $$\int^\infty_0 \cos (ax^n)\,dx = \frac{1}{na^{1/n}} \Gamma(1/n)\,\cos \frac{\pi}{2n} , ~~ n > 1 $$
+        $$\int^\infty_0 \frac{\sin x}{x^p} dx = \frac{\pi}{2\,\Gamma(p)\, \sin (p\pi/2)}, ~~ 0 < p < 1$$
+        $$\int^\infty_0 \frac{\cos x}{x^p} dx = \frac{\pi}{2\,\Gamma(p)\, \cos (p\pi/2)}, ~~ 0 < p < 1$$
+        $$\int^\infty_0 \sin (ax^2)\,\cos (2bx) \, dx = \frac{1}{2} \sqrt{\frac{\pi}{2a}} \left(\cos\frac{b^2}{a} - \sin \frac{b^2}{a} \right)$$
+        $$\int^\infty_0 \cos (ax^2)\,\cos (2bx) \, dx = \frac{1}{2} \sqrt{\frac{\pi}{2a}} \left(\cos\frac{b^2}{a} + \sin \frac{b^2}{a} \right)$$
+        $$\int^\infty_0 \frac{dx}{1 + \tan^mx} dx = \frac{\pi}{4}$$
+        <hr style="width:100%">
+
+
+
+</div>
+
+</div>
+</body>
+</html>

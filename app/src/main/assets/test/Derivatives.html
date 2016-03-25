@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+    <h3>Basic Properties of Derivatives:</h3>
+        $$ \frac{d}{dx}\left(c \cdot f(x) \right)\ = c \frac{d}{dx}\left(f(x)\right)\ $$
+        $$ \frac{d}{dx}\left(f(x) \pm g(x)\right)\ = \frac{d}{dx}\left(f(x)\right)\ \pm \frac{d}{dx}\left(g(x)\right)\ $$
+
+
+       <h3>Product rule:</h3>
+
+        $$ \frac{d}{dx}\left(f(x)\cdot g(x)\right)\ = f(x)\cdot \frac{d}{dx}\left(g(x)\right)\ + g(x)\cdot \frac{d}{dx}\left(f(x)\right)\ $$
+
+        <h3>Quotient rule:</h3>
+
+        $$ \frac{d}{dx}\left( \frac{f(x)}{g(x)} \right)\ = \frac{g(x)\cdot \frac{d}{dx}\left(f(x)\right)\ - f(x)\cdot \frac{d}{dx}\left(g(x)\right)}{g(x)^2} $$
+
+
+
+        <h3>Common Derivatives:</h3>
+        $$ \frac{d}{dx} (C) = 0 $$
+        $$ \frac{d}{dx} (x) = 0 $$
+        $$ \frac{d}{dx} (x^n) = n \cdot x^{n-1} $$
+        $$ \frac{d}{dx} (\sin x) = \cos x $$
+        $$ \frac{d}{dx} (\cos x) = -\sin x $$
+        $$ \frac{d}{dx} (\tan x) = \frac{1}{\cos^2x} $$
+        $$ \frac{d}{dx} ( \sec x) = \sec x \cdot \tan x $$
+        $$ \frac{d}{dx} (\csc x) = - \csc x \cdot \cot x $$
+        $$ \frac{d}{dx} (\cot x) = -\frac{1}{ \sin^2x } $$
+        $$ \frac{d}{dx} (\arcsin x) = \frac{d}{{dx}}\sin ^{ - 1} x = \frac{1}{ \sqrt{1-x^2} } $$
+        $$ \frac{d}{dx} (\arccos x)=\frac{d}{{dx}}\cos ^{ - 1} x = -\frac{1}{\sqrt{1-x^2}} $$
+        $$ \frac{d}{dx} (\arctan x) = \frac{d}{{dx}}\tan ^{ - 1} x = \frac{1}{1+x^2} $$
+        $$ \frac{d}{dx} (a^x) = a^x \cdot \ln a $$
+        $$ \frac{d}{dx} (e^x) = e^x $$
+        $$ \frac{d}{dx} (\ln x) = \frac{1}{x} , x > 0 $$
+        $$ \frac{d}{dx} (\ln |x|) = \frac{1}{x} , x \ne 0 $$
+        $$ \frac{d}{dx} \left( \log_a x \right) = \frac{1}{x\cdot \ln a} , x > 0 $$
+        <hr style="width:100%">
+    </div>
+
+</div>
+</body>
+</html>

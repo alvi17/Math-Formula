@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+   <h3>Notation:</h3>
+        Number of terms in the series: $n$
+        <br>
+        First term: $a_1$
+        <br>
+        $N^{th}$ term: $a_n$
+        <br>
+        Sum of the first $n$ terms: $S_n$
+        <br>
+        Difference between successive terms: $d$
+        <br>
+        Common ratio: $q$
+        <br>
+        Sum to infinity: $S$
+        <br>
+        <hr style="width:100%">
+        <h3>Arithmetic Series Formulas: </h3>
+        $$ a_n = a_1 + (n-1)d $$
+        $$ a_i = \frac{a_{i-1} + a_{i+1}}{2} $$
+        $$ S_n = \frac{a_1 + a_n}{2} \cdot n $$
+        $$ S_n = \frac{2 \cdot a_1 + (n-1) \cdot d}{2} \cdot n $$
+        <hr style="width:100%">
+        <h3>Geometric Series Formulas:</h3>
+        $$ a_n = a_1 \cdot q^{n-1} $$
+        $$ a_i = \sqrt{a_{i-1} \cdot a_{i+1}} $$
+        $$ S_n = \frac{a_nq - a_1}{q-1} $$
+        $$ S_n = \frac{a_1 \cdot \left(q^n - 1 \right)}{q-1} $$
+        $$ S = \frac{a_1}{1-q}, \quad (\text{for } -1 < q < 1)$$
+        <hr style="width:100%">
+
+
+    </div>
+
+</div>
+</body>
+</html>

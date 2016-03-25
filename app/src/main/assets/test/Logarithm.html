@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+        <h3>Logarithm formulas</h3>
+        <hr style="width:100%">
+        $$ y = \log_a x ~~implies~~ a^y = x ~~(a, x >0 , a \ne 1) $$
+        $$ \log_a 1 = 0 $$
+        $$ \log_a a = 1 $$
+        $$ \log_a (mn) = \log_a m + \log_a n $$
+        $$ \log_a \frac{m}{n} = \log_a m - \log_a n $$
+        $$ \log_a m^n = n \cdot \log_a m $$
+        $$ \log_a m = \log_b m \cdot \log_a b $$
+        $$ \log_a m = \frac{\log_b m}{\log_b a} $$
+        $$ \log_a b = \frac{a}{\log_b a} $$
+        $$ \log_a x = \frac{\ln a}{ \ln x} $$
+
+
+    </div>
+
+</div>
+</body>
+</html>

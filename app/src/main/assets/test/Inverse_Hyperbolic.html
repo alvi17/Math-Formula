@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+   <h3>Integrals of Inverse Hyperbolic Sine </h3>
+
+        $$ \int\operatorname{arsinh}(a\,x)\,dx= x\,\operatorname{arsinh}(a\,x)-\frac{\sqrt{a^2\,x^2+1}}{a}+C $$
+        $$ \int x\,\operatorname{arsinh}(a\,x)dx=\frac{x^2\,\operatorname{arsinh}(a\,x)}{2}+\frac{\operatorname{arsinh}(a\,x)}{4\,a^2}-\frac{x \sqrt{a^2\,x^2+1}}{4\,a}+C $$
+        $$ \int x^2\,\operatorname{arsinh}(a\,x)dx=
+        \frac{x^3\,\operatorname{arsinh}(a\,x)}{3}-
+        \frac{\left(a^2\,x^2-2\right)\sqrt{a^2\,x^2+1}}{9\,a^3}+C $$
+        $$ \int x^m\,\operatorname{arsinh}(a\,x)dx=
+        \frac{x^{m+1}\,\operatorname{arsinh}(a\,x)}{m+1}\,-\,
+        \frac{a}{m+1}\int\frac{x^{m+1}}{\sqrt{a^2\,x^2+1}}\,dx\quad(m\ne-1) $$
+        $$ \int\operatorname{arsinh}(a\,x)^2\,dx=
+        2\,x+x\,\operatorname{arsinh}(a\,x)^2-
+        \frac{2\,\sqrt{a^2\,x^2+1}\,\operatorname{arsinh}(a\,x)}{a}+C $$
+        $$ \int\operatorname{arsinh}(a\,x)^n\,dx=
+        x\,\operatorname{arsinh}(a\,x)^n\,-\,
+        \frac{n\,\sqrt{a^2\,x^2+1}\,\operatorname{arsinh}(a\,x)^{n-1}}{a}\,+\,
+        n\,(n-1)\int\operatorname{arsinh}(a\,x)^{n-2}\,dx $$
+        $$ \int\operatorname{arsinh}(a\,x)^n\,dx=
+        -\frac{x\,\operatorname{arsinh}(a\,x)^{n+2}}{(n+1)\,(n+2)}\,+\,
+        \frac{\sqrt{a^2\,x^2+1}\,\operatorname{arsinh}(a\,x)^{n+1}}{a(n+1)}\,+\,
+        \frac{1}{(n+1)\,(n+2)}\int\operatorname{arsinh}(a\,x)^{n+2}\,dx\quad(n\ne-1,-2) $$
+
+        <hr style="width:100%">
+        <h3>Inverse Hyperbolic Cosine Integration</h3>
+
+        $$ \int\operatorname{arcosh}(a\,x)\,dx=
+        x\,\operatorname{arcosh}(a\,x)-
+        \frac{\sqrt{a\,x+1}\,\sqrt{a\,x-1}}{a}+C $$
+        $$ \int x\,\operatorname{arcosh}(a\,x)dx=
+        \frac{x^2\,\operatorname{arcosh}(a\,x)}{2}-
+        \frac{\operatorname{arcosh}(a\,x)}{4\,a^2}-
+        \frac{x\,\sqrt{a\,x+1}\,\sqrt{a\,x-1}}{4\,a}+C $$
+        $$ \int x^2\,\operatorname{arcosh}(a\,x)dx=
+        \frac{x^3\,\operatorname{arcosh}(a\,x)}{3}-\frac{\left(a^2\,x^2+2\right)\sqrt{a\,x+1}\,\sqrt{a\,x-1}}{9\,a^3}+C  $$
+        $$ \int x^m\,\operatorname{arcosh}(a\,x)dx=
+        \frac{x^{m+1}\,\operatorname{arcosh}(a\,x)}{m+1}\,-\,
+        \frac{a}{m+1}\int\frac{x^{m+1}}{\sqrt{a\,x+1}\,\sqrt{a\,x-1}}\,dx\quad(m\ne-1) $$
+        $$ \int\operatorname{arcosh}(a\,x)^2\,dx=
+        2\,x+x\,\operatorname{arcosh}(a\,x)^2-
+        \frac{2\,\sqrt{a\,x+1}\,\sqrt{a\,x-1}\,\operatorname{arcosh}(a\,x)}{a}+C $$
+        $$ \int\operatorname{arcosh}(a\,x)^n\,dx=
+        x\,\operatorname{arcosh}(a\,x)^n\,-\,
+        \frac{n\,\sqrt{a\,x+1}\,\sqrt{a\,x-1}\,\operatorname{arcosh}(a\,x)^{n-1}}{a}\,+\,
+        n\,(n-1)\int\operatorname{arcosh}(a\,x)^{n-2}\,dx $$
+        $$ \int\operatorname{arcosh}(a\,x)^n\,dx=
+        -\frac{x\,\operatorname{arcosh}(a\,x)^{n+2}}{(n+1)\,(n+2)}\,+\,
+        \frac{\sqrt{a\,x+1}\,\sqrt{a\,x-1}\,\operatorname{arcosh}(a\,x)^{n+1}}{a\,(n+1)}\,+\,
+        \frac{1}{(n+1)\,(n+2)}\int\operatorname{arcosh}(a\,x)^{n+2}\,dx\quad(n\ne-1,-2) $$
+
+        <hr style="width:100%">
+        <h3>Inverse Hyperbolic Tangent Integration</h3>
+
+        $$ \int\operatorname{artanh}(a\,x)\,dx=
+        x\,\operatorname{artanh}(a\,x)+
+        \frac{\ln\left(1-a^2\,x^2\right)}{2\,a}+C $$
+        $$ \int x\,\operatorname{artanh}(a\,x)dx=
+        \frac{x^2\,\operatorname{artanh}(a\,x)}{2}-
+        \frac{\operatorname{artanh}(a\,x)}{2\,a^2}+\frac{x}{2\,a}+C $$
+        $$ \int x^2\,\operatorname{artanh}(a\,x)dx=
+        \frac{x^3\,\operatorname{artanh}(a\,x)}{3}+
+        \frac{\ln\left(1-a^2\,x^2\right)}{6\,a^3}+\frac{x^2}{6\,a}+C $$
+        $$ \int x^m\,\operatorname{artanh}(a\,x)dx=
+        \frac{x^{m+1}\operatorname{artanh}(a\,x)}{m+1}-
+        \frac{a}{m+1}\int\frac{x^{m+1}}{1-a^2\,x^2}\,dx\quad(m\ne-1) $$
+
+        <hr style="width:100%">
+        <h3>Inverse Hyperbolic Cotangent Integration</h3>
+
+        $$ \int\operatorname{arcoth}(a\,x)\,dx=
+        x\,\operatorname{arcoth}(a\,x)+
+        \frac{\ln\left(a^2\,x^2-1\right)}{2\,a}+C $$
+        $$ \int x\,\operatorname{arcoth}(a\,x)dx=
+        \frac{x^2\,\operatorname{arcoth}(a\,x)}{2}-
+        \frac{\operatorname{arcoth}(a\,x)}{2\,a^2}+\frac{x}{2\,a}+C $$
+        $$ \int x^2\,\operatorname{arcoth}(a\,x)dx=
+        \frac{x^3\,\operatorname{arcoth}(a\,x)}{3}+
+        \frac{\ln\left(a^2\,x^2-1\right)}{6\,a^3}+\frac{x^2}{6\,a}+C $$
+        $$ \int x^m\,\operatorname{arcoth}(a\,x)dx=
+        \frac{x^{m+1}\operatorname{arcoth}(a\,x)}{m+1}+
+        \frac{a}{m+1}\int\frac{x^{m+1}}{a^2\,x^2-1}\,dx\quad(m\ne-1) $$
+
+        <hr style="width:100%">
+        <h3>Inverse Hyperbolic Secant Integration</h3>
+
+        $$ \int\operatorname{arsech}(a\,x)\,dx=
+        x\,\operatorname{arsech}(a\,x)-
+        \frac{2}{a}\,\operatorname{arctan}\sqrt{\frac{1-a\,x}{1+a\,x}}+C $$
+        $$ \int x\,\operatorname{arsech}(a\,x)dx=
+        \frac{x^2\,\operatorname{arsech}(a\,x)}{2}-
+        \frac{(1+a\,x)}{2\,a^2}\sqrt{\frac{1-a\,x}{1+a\,x}}+C $$
+        $$ \int x^2\,\operatorname{arsech}(a\,x)dx=
+        \frac{x^3\,\operatorname{arsech}(a\,x)}{3}\,-\,
+        \frac{1}{3\,a^3}\,\operatorname{arctan}\sqrt{\frac{1-a\,x}{1+a\,x}}\,-\,
+        \frac{x(1+a\,x)}{6\,a^2}\sqrt{\frac{1-a\,x}{1+a\,x}}\,+\,C $$
+        $$ \int x^m\,\operatorname{arsech}(a\,x)dx=
+        \frac{x^{m+1}\,\operatorname{arsech}(a\,x)}{m+1}\,+\,
+        \frac{1}{m+1}\int\frac{x^m}{(1+a\,x)\sqrt{\frac{1-a\,x}{1+a\,x}}}\,dx\quad(m\ne-1) $$
+
+        <hr style="width:100%">
+        <h3>Inverse Hyperbolic Cosecant Integration</h3>
+
+        $$ \int\operatorname{arcsch}(a\,x)\,dx=
+        x\,\operatorname{arcsch}(a\,x)+
+        \frac{1}{a}\,\operatorname{arcoth}\sqrt{\frac{1}{a^2\,x^2}+1}+C  $$
+        $$ \int x\,\operatorname{arcsch}(a\,x)dx=
+        \frac{x^2\,\operatorname{arcsch}(a\,x)}{2}+
+        \frac{x}{2\,a}\sqrt{\frac{1}{a^2\,x^2}+1}+C $$
+        $$ \int x^2\,\operatorname{arcsch}(a\,x)dx=
+        \frac{x^3\,\operatorname{arcsch}(a\,x)}{3}\,-\,
+        \frac{1}{6\,a^3}\,\operatorname{arcoth}\sqrt{\frac{1}{a^2\,x^2}+1}\,+\,
+        \frac{x^2}{6\,a}\sqrt{\frac{1}{a^2\,x^2}+1}\,+\,C $$
+        $$ \int x^m\,\operatorname{arcsch}(a\,x)dx=
+        \frac{x^{m+1}\operatorname{arcsch}(a\,x)}{m+1}\,+\,
+        \frac{1}{a(m+1)}\int\frac{x^{m-1}}{\sqrt{\frac{1}{a^2\,x^2}+1}}\,dx\quad(m\ne-1)  $$
+
+
+        <hr style="width:100%">
+   </div>
+
+</div>
+</body>
+</html>

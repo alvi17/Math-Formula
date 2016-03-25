@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+        $$ e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdot \cdot \cdot $$
+        $$ a^x = 1 + x\,\ln a + \frac{(x\,\ln a)^2}{2!} + \frac{(x\,\ln a)^3}{3!} + \cdot \cdot \cdot $$
+        $$ \begin{aligned} (a + x)^n &= a^n + na^{n-1} + \frac{n(n-1)}{2!} a^{n-2}x^2 + \frac{n(n-1)(n-2)}{3!}a^{n-3}x^3+\cdot \cdot \cdot \\ &= a^n + { n \choose 1} a^{n-1}x + { n \choose 2} a^{n-2}x^2 + { n \choose 3} a^{n-3}x^3 + \cdot \cdot \cdot \end{aligned} $$
+        $$ \sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdot \cdot \cdot $$
+        $$ \cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdot \cdot \cdot $$
+        $$ \csc x = \frac{1}{x} + \frac{x}{6} + \frac{7x^3}{360} + \cdot \cdot \cdot + \frac{2\left(2^{2n}-1\right)E_n x^{2n}}{(2n)!} \quad 0 < x < \pi $$
+        $$ \sec x = 1+ \frac{x^2}{2} + \frac{5x^4}{24} + \frac{61x^6}{720} + \cdot \cdot \cdot + \frac{E_n x^{2n}}{(2n)!} \quad -\frac{\pi}{2} < x < \frac{\pi}{2} $$
+        $$ \cot x = \frac{1}{x} - \frac{x}{3} - \frac{x^3}{45} - \cdot \cdot \cdot - \frac{2^{2n}B_nx^{2n-1}}{(2n)!} \quad 0 < x < \pi $$
+
+        $$ \ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdot \cdot \cdot \quad -1 < x \leq 1 $$
+        <hr style="width:100%">
+    </div>
+
+</div>
+</body>
+</html>

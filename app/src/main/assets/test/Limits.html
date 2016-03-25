@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+   <h3>The General Limit Formulas:</h3>
+        $\text{If } \lim_{x \to a} f(x) = l \text{ and } \lim_{x \to a} g(x) = m \text{ ,then}$
+        $$\lim_{x \to a} ~\left[ f(x) \pm g(x) \right] = l \pm m $$
+        $$\lim_{x \to a} ~\left[ f(x) \cdot g(x) \right] = l \cdot m $$
+        $$\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{l}{m}$$
+        $$\lim_{x \to a} c\cdot f(x) = c \cdot l $$
+        $$\lim_{x \to a} \frac{1}{f(x)} = \frac{1}{l} $$
+        <hr style="width:100%">
+
+        <h3>The Common Limits:</h3>
+        $$ \lim_{x \to \infty}~\left(1+\frac{1}{n}\right)^n = e $$
+        $$ \lim_{x \to \infty}~(1 + n)^{1/n} = e $$
+        $$ \lim_{x \to 0}~\frac{\sin x}{x} = 1 $$
+        $$ \lim_{x \to 0}~\frac{\tan x}{x} = 1 $$
+        $$ \lim_{x \to 0}~\frac{\cos x-1}{x} = 0 $$
+        $$ \lim_{x \to a}~\frac{x^n - a^n}{x-a} = n\,a^{n-1} $$
+        <hr style="width:100%">
+
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+
+        $$ a^3 + b^3 = (a+b)\left(a^2 - ab + b^2\right) $$
+        $$ a^3 - b^3 = (a-b)\left(a^2 + ab + b^2\right) $$
+        $$ a^2 - b^2 = (a-b)(a+b) $$
+        $$ (a - b)^2 = a^2 - 2ab + b^2 $$
+        $$ (a + b)^2 = a^2 + 2ab + b^2 $$
+        $$ (a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3 $$
+        $$ (a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3 $$
+        $$ x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+        $$ a^4 - b^4 = (a-b)(a+b)\left(a^2 + b^2\right) $$
+        $$ a^5 - b^5 = (a-b)\left(a^4 + a^3b + a^2b^2 + ab^3 + b^4\right) $$
+
+        <hr style="width:100%">
+    </div>
+</div>
+</body>
+</html>

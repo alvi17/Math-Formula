@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+   <h3>Logarithmic Formulas</h3>
+        $$ \int^1_0 x^m(\ln x)^n dx = \frac{(-1)^n n!}{(m+1)^{n+1}} , \quad m>-1,\, n=0,1,2,\dots $$
+        $$ \int^1_0 \frac{\ln x}{1+x} dx = -\frac{\pi^2}{12} $$
+        $$ \int^1_0 \frac{\ln x}{1-x}dx = -\frac{\pi^2}{6} $$
+        $$ \int^1_0 \frac{\ln (1+x)}{x} dx = \frac{\pi^2}{12} $$
+        $$ \int^1_0 \frac{\ln (1 - x)}{x} dx = - \frac{\pi^2}{6} $$
+        $$ \int^1_0 \ln x \ln (1+x) \,dx = 2 - 2\ln 2 - \frac{\pi^2}{12} $$
+        $$ \int^1_0 \ln x \ln (1 - x) \,dx = 2 - \frac{\pi^2}{6} $$
+        $$ \int^\infty_0 \frac{x^{p-1}\,\ln x}{1+x} dx = -\pi^2\, \csc (p\pi)\,\cot (p\pi), 0 < p < 1 $$
+        $$ \int^1_0 \frac{x^m - x^n}{\ln x} dx = \ln \frac{m+1}{n+1} $$
+        $$ \int^\infty_0 e^{-x}\,\ln x\,dx = - \gamma $$
+        $$ \int^\infty_0 e^{-x^2} \ln x \, dx = -\frac{\sqrt{\pi}}{4} ( \gamma + 2\,\ln 2 ) $$
+        $$ \int^\infty_0 \ln \left(\frac{e^x+1}{e^x-1} \right) dx = \frac{\pi^2}{4} $$
+        $$ \int^{\pi/2}_0 \ln (\sin x) dx = \int^{\pi/2}_0 \ln (\cos x) dx = -\frac{\pi}{2} \ln 2 $$
+        $$ \int^{\pi/2}_0 ( \ln (\sin x))^2 dx = \int^{\pi/2}_0 ( \ln (\cos x))^2 dx = \frac{\pi}{2}(\ln 2)^2 + \frac{\pi^3}{24} $$
+        $$ \int^\pi_0 x\,\ln(\sin x) dx = -\frac{\pi^2}{2}\,\ln 2 $$
+        $$ \int^{\pi/2}_0 \sin x \ln (\sin x) dx = \ln 2 - 1 $$
+        $$ \int^{2\pi}_0 \ln (a + b \sin x) dx = \int^{2\pi}_0 \ln (a + b \cos x) dx = 2\pi \ln\left(a + \sqrt{a^2-b^2} \right)$$
+        $$ \int^\pi_0 \ln (a + b\cos x) dx = \pi \ln \left( \frac{a + \sqrt{a^2 - b^2}}{2} \right) $$
+        $$ \int^\pi_0 \ln\left( a^2 - 2ab \cos x + b^2 \right) dx = \begin{cases} 2\pi\ln a & a \geq b > 0 \\ 2\pi \ln b & b \geq a > 0 \end{cases} $$
+        $$ \int^{\pi/4}_0 \ln(1 + \tan x)dx= \frac{\pi}{8} \ln 2 $$
+        $$ \int^\frac{\pi}{2}_0 \sec x \,\ln\left(\frac{1+b\cos x}{1+ a \cos x}\right) dx = \frac{1}{2}\left(\arccos^2 a - \arccos^2b\right)$$
+        <hr style="width:100%">
+
+    </div>
+
+</div>
+</body>
+</html>

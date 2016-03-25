@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+   <h3>Powers of Natural Numbers:</h3>
+        $$ \sum\limits_{k=1}^n k = \frac{1}{2}n(n+1) $$
+        $$ \sum\limits_{k=1}^n k^2 = \frac{1}{6}n(n+1)(2n+1) $$
+        $$ \sum\limits_{k=1}^n k^3 = \frac{1}{4}n^2(n+1)^2 $$
+        <hr style="width:100%">
+
+        <h3>Special Power Series:</h3>
+        $$ \frac{1}{1-x} = 1 + x + x^2 +x^3 + \cdot \cdot \cdot \quad(\text{for } -1 < x < 1) $$
+        $$ \frac{1}{1+x} = 1 - x + x^2 - x^3 + \cdot \cdot \cdot \quad(\text{for } -1 < x < 1) $$
+        $$ e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdot \cdot \cdot $$
+        $$ \ln(1+x) = x - \frac{x^2}{2} + \frac{x^3}{3} - \frac{x^4}{4} + \cdot \cdot \cdot \quad (\text{for } -1 < x < 1) $$
+        $$ \sin x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdot \cdot \cdot $$
+        $$ \cos x = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \frac{x^6}{6!} + \cdot \cdot \cdot $$
+        $$ \tan\,x = x - \frac{x^3}{3} + \frac{2x^5}{15} - \frac{17x^7}{315} + \cdot \cdot \cdot \quad \left(\text{for } -\frac{\pi}{2} < x < \frac{\pi}{2} \right)$$
+        $$ \sinh x = x + \frac{x^3}{3!} + \frac{x^5}{5!} + \frac{x^7}{7!} + \cdot \cdot \cdot $$
+        $$ \cosh x = 1 + \frac{x^2}{2!} + \frac{x^4}{4!} + \frac{x^6}{6!} + \cdot \cdot \cdot $$
+        <hr style="width:100%">
+
+</div>
+
+</div>
+</body>
+</html>

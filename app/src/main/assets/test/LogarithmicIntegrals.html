@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+   <h3> Integrals of Logarithmic Functions</h3>
+        $$ \int \ln(cx)dx = x\ln(cx) - x $$
+        $$ \int \ln(ax+b)dx = x\ln(ax+b) - x + \frac{b}{a}\ln(ax + b) $$
+        $$ \int (\ln x)^2dx = x(\ln x)^2 - 2x\ln x + 2x $$
+        $$ \int (\ln (cx))^ndx = x(\ln x)^n - n\cdot\int (\ln (cx))^{n-1}dx $$
+        $$ \int \frac{dx}{\ln x} = \ln|\ln x|+\ln x+\sum\limits_{n=2}^\infty\frac{(\ln x)^i}{i\cdot i!} $$
+        $$ \int \frac{dx}{(\ln x)^n} = -\frac{x}{(n-1)(\ln x)^{n-1}} + \frac{1}{n-1} \int \frac{dx}{(\ln x)^{n-1}} $$
+        $$ \int x^m \cdot \ln xdx = x^{m+1}\left(\frac{\ln x}{m+1}-\frac{1}{(m+1)^2} \right) \quad ( \text{fot } m\ne1)$$
+        $$ \int x^m \cdot (\ln x)^ndx = \frac{x^{m+1}(\ln x)^n}{m+1} - \frac{n}{m+1}\int x^m(\ln x)^{n-1}dx \quad (\text{for } m \ne 1) $$
+        $$ \int \frac{(\ln x)^n}{x}dx = \frac{(\ln x)^{n+1}}{n+1}, \quad(\text{for } n\ne 1) $$
+        $$ \int \frac{\ln x^n}{x}dx = \frac{\left(\ln x^n \right)^2}{2n},\quad (\text{for } n \ne 0 )$$
+        $$ \int \frac{\ln x}{x^m}dx = -\frac{\ln x}{(m-1)x^{m-1}}-\frac{1}{(m-1)^2x^{m-1}},\quad(\text{fot }m\ne1) $$
+        $$ \int \frac{(\ln x)^n}{x^m}dx = -\frac{(\ln x)^n}{(m-1)x^{m-1}} + \frac{n}{m-1}\int\frac{(\ln x)^{n-1}}{x^m}dx,\quad(\text{fot }m\ne1) $$
+        $$ \int \frac{dx}{x\cdot \ln x} = \ln|\ln x| $$
+        $$ \int \frac{dx}{x^n\cdot \ln x} = \ln|\ln x| + \sum\limits_{i=1}^\infty(-1)^i \frac{(n-1)^i(\ln x)^i}{i\cdot i!}$$
+        $$ \int \frac{dx}{x(\ln x)^n} = -\frac{1}{(n-1)(\ln x)^{n-1}},\quad(\text{for }n\ne 1) $$
+        $$ \int \ln(x^2 + a^2)dx = x\,\ln(x^2 + a^2) - 2x + 2a\,\arctan\frac{x}{a} $$
+        $$ \int \sin(\ln x)dx = \frac{x}{2}(\sin(\ln x)-\cos(\ln x)) $$
+        $$ \int \cos(\ln x)dx = \frac{x}{2}(\sin(\ln x) + \cos(\ln x)) $$
+        <hr style="width:100%">
+
+</div>
+
+</div>
+</body>
+</html>

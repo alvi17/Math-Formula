@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+        <h3>Definition of Taylor series: </h3>
+
+        $$ f(x) = f(a) + f^{(1)}(a)(x-a) + \frac{f^{(2)}(a)(x-a)^2}{2!} + \cdot \cdot \cdot +\frac{f^{(n-1)}(a)(x-a)^{n-1}}{(n-1)!} + R_n $$
+        Here $f^{(1)}$, $f^{(2)}$ are first and second derivative respectively.
+        $$ R_n = \frac{f^{(n)}(\xi)(x-a)^n}{n!} \text{ where } a \leq \xi \leq x, \quad \text{ ( Lagrangue's form )} $$
+        $$ R_n = \frac{f^{(n)}(\xi)(x-\xi)^{n-1}(x-a)}{(n-1)!} \text{ where } a \leq \xi \leq x, \quad \text{ ( Cauch's form )} $$
+
+        This result holds if $f(x)$ has continuous derivatives of order $n$ at last. If $\lim_{n \to +\infty}R_n = 0$, the infinite series obtained is called Taylor series for $f(x)$ about $x = a$. If $a = 0$ the series is often called a Maclaurin series.
+        <hr style="width:100%">
+
+    </div>
+
+</div>
+</body>
+</html>

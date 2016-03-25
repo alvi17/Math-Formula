@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+        <h3>Exponential Formulas</h3>
+        $$ \int^\infty_0 e^{-ax} \cos bx \, dx = \frac{a}{a^2 + b^2} $$
+        $$ \int^\infty_0 e^{-ax} \sin bx \, dx = \frac{b}{a^2 + b^2} $$
+        $$ \int^\infty_0 \frac{e^{-ax} \sin bx}{x} \, dx = \arctan \frac{b}{a} $$
+        $$ \int^\infty_0 \frac{e^{-ax}-e^{-bx}}{x} dx = \ln \frac{b}{a}$$
+        $$ \int^\infty_0 e^{-ax^2} \, dx = \frac{1}{2} \sqrt{ \frac{\pi}{a} } $$
+        $$ \int^\infty_0 e^{-ax^2} \cos bx \, dx = \frac{1}{2} \sqrt{ \frac{\pi}{a} } e^{-\frac{b^2}{4a}} $$
+        $$ \int^\infty_{-\infty} e^{-(ax^2+bx+c)} dx = \sqrt{\frac{\pi}{2}} e^\frac{b^2-4ac}{4a} $$
+        $$ \int^\infty_0 x^n\,e^{-ax}dx = \frac{\Gamma(n+1)}{a^{n+1}} $$
+        $$ \int^\infty_0 x^m\,e^{-ax^2}dx = \frac{\Gamma\left(\frac{m+1}{2}\right)}{2a^{(m+1)/2}} $$
+        $$ \int^\infty_0 e^{-\left(ax^2+b/x^2\right)} dx = \frac{1}{2}\sqrt{\frac{\pi}{a}}e^{-2\sqrt{ab}} $$
+        $$ \int^\infty_0 \frac{x\,dx}{e^x-1} = \frac{\pi^2}{6} $$
+        $$ \int^\infty_0 \frac{x^{n-1}}{e^x-1}dx = \Gamma (n) \left( \frac{1}{1^n} + \frac{1}{2^n} + \frac{1}{3^n} + \cdots \right) $$
+        $$ \int^\infty_0 \frac{x\,dx}{e^x+1} = \frac{\pi^2}{12}$$
+        $$ \int^\infty_0 \frac{x^{n-1}}{e^x+1}dx = \Gamma (n) \left( \frac{1}{1^n} - \frac{1}{2^n} + \frac{1}{3^n} - \cdots \right) $$
+        $$ \int^\infty_0 \frac{\sin mx}{e^{2\pi x} - 1} dx = \frac{1}{4} \coth \frac{m}{2} - \frac{1}{2m} $$
+        $$ \int^\infty_0 \left( \frac{1}{1+x} - e^{-x} \right) \frac{dx}{x} = \gamma $$
+        $$ \int^\infty_0 \frac{e^{-x^2} - e^{-x}}{x} dx = \frac{1}{2} \gamma $$
+        $$ \int^\infty_0 \left( \frac{1}{e^x-1} - \frac{e^{-x}}{x} \right) dx = \gamma $$
+        $$ \int^\infty_0 \frac{e^{-ax} - e^{-bx}}{x \sec (px)} dx = \frac{1}{2} \ln\left( \frac{b^2+p^2}{a^2+p^2}\right) $$
+        $$ \int^\infty_0 \frac{e^{-ax} - e^{-bx}}{x \csc (px)} dx = \arctan \frac{b}{p} - \arctan \frac{a}{p} $$
+        $$ \int^\infty_0 \frac{e^{-ax}(1-\cos x)}{x^2} dx = \mathrm{arccot}\,a - \frac{a}{2} \ln (a^2 + 1) $$
+        <hr style="width:100%">
+
+    </div>
+
+</div>
+</body>
+</html>

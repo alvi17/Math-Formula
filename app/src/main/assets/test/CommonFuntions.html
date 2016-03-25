@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+        $$ \sec \alpha = \frac{1}{\cos\alpha} = \frac{\text{Hypotenuse}}{\text{Adjacent}} $$
+        $$ \cot \alpha = \frac{1}{\tan\alpha} = \frac{\text{Adjacent}}{\text{Opposite}} $$
+        $$ \cos(\alpha + \beta) = \cos\alpha \cdot \cos \beta - \sin\alpha \cdot \cos\beta $$
+        $$ \sin(\alpha + \beta) = \sin\alpha \cdot \cos \beta + \sin\beta \cdot \cos\alpha $$
+        $$ \sin(2\,\alpha) = 2 \cdot \sin\alpha \cdot \cos\alpha $$
+        $$ \cos(2\,\alpha) = \cos^2\alpha - \sin^2\alpha $$
+        $$ \csc \alpha = \frac{1}{\sin\alpha} = \frac{\text{Hypotenuse}}{\text{Opposite}} $$
+        $$ \sin^2x + \cos^2x = 1 $$
+        $$ \tan^2x + 1 = \frac{1}{\cos^2x} $$
+        $$ \sin \alpha = \frac{\text{Opposite}}{\text{Hypotenuse}} $$
+        <hr style="width:100%">
+    </div>
+
+</div>
+</body>
+</html>

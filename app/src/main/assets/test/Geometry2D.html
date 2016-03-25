@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+    <h3>Line forms:</h3>
+        <h4>Slope y-intercept form:</h4>
+        $$ y = mx+b $$
+
+        <h4>Two point form:</h4>
+        $$ y - y_1 =\frac{y_2-y_1}{x_2 - x_1} (x - x_1)$$
+
+        <h4>Point slope form:</h4>
+        $$ y - y_1 = m(x - x_1) $$
+
+            <h4>Intercept form</h4>
+        $$ \frac{x}{a} + \frac{y}{b} = 1~,~(a,b \ne 0) $$
+
+                <h4> Normal form:</h4>
+        $$ x\cdot \cos\Theta + y\cdot \sin\Theta = p $$
+
+                    <h4>Parametric form:</h4>
+        $$ \begin{aligned} x &= x_1 + t\cdot \cos\alpha \\ y &= y_1 + t\cdot \sin\alpha \\ \end{aligned} $$
+
+                        <h4>Point direction form:</h4>
+        $$ \frac{x - x_1}{A} = \frac{y - y_1}{B} $$
+
+        where $(A,B)$ is the direction of the line and $ P_1(x_1, y_1)$ lies on the line.
+
+                            <h4> General form:</h4>
+        $$ Ax + By + C = 0~,~(A\ne 0 ~\text{or}~B \ne 0) $$
+        <hr style="width:100%">
+        <h3>Distance: </h3>
+        <h4>The distance from $ A\,x + B\,y + C = 0 $ to $ P_1(x_1, y_1) $ is </h4>
+        $$ d = \frac{|A\,x_1 + B\,y_1 + C|}{\sqrt{A^2 + B^2}} $$
+        <hr style="width:100%">
+        <h3>Concurrent lines</h3>
+        Three lines
+        $$ \begin{aligned} A_1x + B_1y + C_1 &= 0 \\ A_2x + B_2y + C_2 &= 0 \\ A_3x + B_3y + C_3 &= 0 \end{aligned} $$
+
+        are concurrent if and only if:
+        $$\begin{vmatrix} A_1 & B_1 & C_1 \\ A_2 & B_2 & C_2 \\ A_3 & B_3 & C_3 \\ \end{vmatrix} = 0$$
+        <hr style="width:100%">
+        <h3>Line segment:</h3>
+        <h4>A line segment $P_1P_2$ can be represented in parametric form by</h4>
+        $$ \begin{aligned} x &= x_1 + (x_2 - x_1)t \\ y &= y_1 + (y_2 - y_1)t \\ & 0 \leq t \leq 1 \end{aligned} $$
+
+        <h4>Two line segments $P_1P_2$ and $P_3P_4$ intersect if any only if the numbers</h4>
+        $$ s = \frac{ \begin{vmatrix} x_2 - x_1 & y_2 - y_1 \\ x_3 - x_1 & y_3 - y_1 \end{vmatrix}} { \begin{vmatrix} x_2 - x_1 & y_2 - y_1 \\ x_3 - x_4 & y_3 - y_4 \end{vmatrix}} ~~ \text{and} ~~ t = \frac{ \begin{vmatrix} x_3 - x_1 & y_3 - y_1 \\ x_3 - x_4 & y_3 - y_4 \end{vmatrix}} { \begin{vmatrix} x_2 - x_1 & y_2 - y_1 \\ x_3 - x_4 & y_3 - y_4 \end{vmatrix}} $$
+
+        satisfy $ 0 \leq s \leq 1 $ and $ 0 \leq t \leq 1 $.
+        <hr style="width:100%">
+
+    </div>
+
+</div>
+</body>
+</html>

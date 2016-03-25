@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+        <h3>Definitions and properties:</h3>
+        Second derivative:
+        $$ \frac{d^2}{dx^2}\left(f(x)\right)\ = \frac{d}{dx} \left(\frac{dy}{dx}\right) - \frac{d^2y}{dx^2} $$
+
+        Higher-Order derivative:
+        $$ \frac{d^n}{dx^n}\left(f(x)\right)\ = \frac{d}{dx}\left( \frac{d^\left(n-1\right)}{dx^\left(n-1\right)}\left(f(x)\right) \right)\ $$
+        $$ \frac{d^n}{dx^n}\left(f(x) \, \pm \, g(x)\right) = \frac{d^n}{dx^n}f(x) \pm \frac{d^n}{dx^n}~g(x) $$
+
+        Leibniz's Formulas:
+        $$ \frac{d^2}{dx^2}(f(x) \cdot g(x)) =  g(x)\cdot\frac{d^2}{dx^2}f(x)  + 2 \cdot \frac{d}{dx}f(x)\cdot \frac{d}{dx}g(x) + f(x) \cdot \frac{d^2}{dx^2}g(x)$$
+        $$ \frac{d^3}{dx^3}(f(x) \cdot g(x)) = g(x)\cdot \frac{d^3}{dx^3}f(x) + 3 \cdot \frac{d^2}{dx^2}f(x)\cdot \frac{d}{dx}g(x) + 3 \cdot \frac{d}{dx}f(x)\cdot \frac{d^2}{dx^2}g(x) + f(x) \cdot \frac{d^3}{dx^3}g(x)$$
+        $$ \frac{d^n}{dx^n}(f \cdot g) = g \cdot \frac{d^n}{dx^n}f  + n \cdot \frac{d^{(n-1)}}{dx^{(n-1)}}f\cdot \frac{d}{dx}g + \frac{n(n-1)}{1\cdot2} \cdot \frac{d^{(n-2)}}{dx^{(n-2)}}f \cdot \frac{d^2}{dx^2}g + \dots + f \cdot \frac{d^n}{dx^n}g $$
+        <hr style="width:100%">
+        <h3>Important Formulas:</h3>
+        $$ \left(x^m \right)^{(n)} = \frac{ m! }{(m-n)!} x^{m-n} $$
+        $$ \left( x^n \right)^{(n)} = n! $$
+        $$ \left( \log_a x \right)^{(n)} = \frac{(-1)^{(n-1)} \cdot (n-1)!}{x^n \cdot \ln a} $$
+        $$ (\ln n)^{(n)} = \frac{(-1)^{n-1}(n-1)!}{x^n} $$
+        $$ \left( a^x \right)^{(n)} = a^x \cdot \ln^n a $$
+        $$ \left( e^x \right)^{(n)} = e^x $$
+        $$ \left( a^{m \, x} \right)^{(n)} = m^n \, a^{m \cdot x} \ln^n a $$
+        $$ (\sin x)^{(n)} = \sin\left(x + \frac{n\,\pi}{2} \right) $$
+        $$ (\cos x)^{(n)} = \cos\left(x + \frac{n\,\pi}{2} \right) $$
+        <hr style="width:100%">
+
+    </div>
+
+</div>
+</body>
+</html>

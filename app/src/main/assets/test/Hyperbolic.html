@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+    <h3>Definitions of hyperbolic functions:</h3>
+        $$ \sinh x=\frac{e^x - e^{-x}}{2} $$
+        $$ \cosh x=\frac{e^x + e^{-x}}{2} $$
+        $$ \tanh x=\frac{e^x - e^{-x}}{e^x + e^{-x}} =\frac{\sinh x}{\cosh x} $$
+        $$ \mathrm{csch}\,x=\frac{2}{e^x - e^{-x}} = \frac{1}{\sinh x} $$
+        $$ \mathrm{sech}\,x=\frac{2}{e^x + e^{-x}} = \frac{1}{\cosh x} $$
+        $$ \coth\,x=\frac{e^x + e^{-x}}{e^x - e^{-x}} = \frac{\cosh x}{\sinh x} $$
+        <hr style="width:100%">
+        <h3>Derivatives </h3>
+        $$ \frac{d}{dx}\, \sinh x = \cosh x $$
+        $$ \frac{d}{dx}\, \cosh x = \sinh x $$
+        $$ \frac{d}{dx}\, \tanh x = \mathrm{sech}^2x $$
+        $$ \frac{d}{dx}\, \mathrm{csch}\,x = -\mathrm{csch}\,x\cdot \coth x $$
+        $$ \frac{d}{dx}\, \mathrm{sech}\,x = -\mathrm{sech}\,x\cdot \tanh x $$
+        $$ \frac{d}{dx}\,\coth x = -\mathrm{csch}^2x $$
+        <hr style="width:100%">
+        <h3>Hyperbolic identities </h3>
+        $$ \cosh^2x - \sinh^2x = 1 $$
+        $$ \tanh^2x + \mathrm{sech}^2x = 1 $$
+        $$ \coth^2x - \mathrm{csch}^2x = 1 $$
+        $$ \sinh(x \pm y) = \sinh x \cdot \cosh y \pm \cosh x\cdot \sinh y $$
+        $$ \cosh(x \pm y) = \cosh x \cdot \cosh y \pm \sinh x \cdot \sinh y $$
+        $$ \sinh(2\cdot x) = 2 \cdot \sinh x \cdot \cosh x $$
+        $$ \cosh(2\cdot x) = \cosh^2x + \sinh^2x $$
+        $$ \sinh^2x = \frac{-1 + \cosh 2x}{2} $$
+        $$ \cosh^2x = \frac{1 + \cosh 2x}{2} $$
+        <hr style="width:100%">
+        <h3>Inverse Hyperbolic functions </h3>
+        $$ \sinh^{-1}x=\ln \left(x+\sqrt{x^2 + 1}\right), ~~ x \in (-\infty, \infty) $$
+        $$ \cosh^{-1}x=\ln\left(x+\sqrt{x^2 - 1}\right), ~~ x \in [1, \infty) $$
+        $$ \tanh^{-1}x=\frac{1}{2} \ln\left(\frac{1 + x}{1 -x}\right), ~~ x \in (-1, 1) $$
+        $$ \coth^{-1}x=\frac{1}{2}\,\ln\left(\frac{x + 1}{x-1}\right), ~~ x \in (-\infty, -1) \cup (1, \infty) $$
+        $$ \mathrm{sech}^{-1}x=\ln\left(\frac{1 + \sqrt{1-x^2}}{x}\right), ~~ x \in (0, 1]$$
+        $$ \mathrm{csch}^{-1}x = \ln\left(\frac{1}{x} + \frac{\sqrt{1-x^2}}{|x|}\right), ~~ x \in (-\infty, 0) \cup (0,\infty)$$
+    <hr style="width:100%">
+        <h3>Derivatives of Inverse Hyperbolic functions </h3>
+    $$ \frac{d}{dx}\,\sinh^{-1}x= \frac{1}{\sqrt{x^2+1}} $$
+    $$ \frac{d}{dx}\, \cosh^{-1}x=\frac{1}{\sqrt{x^2-1}} $$
+    $$ \frac{d}{dx}\,tanh^{-1}x=\frac{1}{1-x^2} $$
+    $$ \frac{d}{dx}\, \mathrm{csch}^{-1}x=-\frac{1}{|x|\sqrt{1 + x^2}} $$
+    $$ \frac{d}{dx}\,\mathrm{sech}^{-1}x=-\frac{1}{x\sqrt{1 - x^2}} $$
+    $$ \frac{d}{dx}\,\coth^{-1}x=\frac{1}{1-x^2} $$
+    <hr style="width:100%">
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+        <h3>Line forms:</h3>
+        Point direction form:
+        $$ \frac{x-x_1}{a} = \frac{y - y_1}{b} = \frac{z-z_1}{c} $$
+
+        Two point form:
+        $$ \frac{x-x_1}{x_2-x_1} = \frac{y - y_1}{y_2-y_1} = \frac{z-z_1}{z_2-z_1} $$
+
+        Parametric form:
+        $$ \begin{aligned} x &= x_1 +t\,\cos \alpha \\ y &= y_1 +t\,\cos \beta \\ z &= z_1 +t\,\cos \gamma \end{aligned} $$
+        <hr style="width:100%">
+
+        <h3>Distance between two lines in 3 dimensions:</h3>
+        The distance from $P_2(x_2,y_2,z_2)$ to the line through $P_1(x_1,y_1,z_1)$ in the direction $(a,b,c)$ is
+        $$ d = \sqrt{ \frac{\left[c(y_2-y_1)-b(z_2-z_1)\right]^2 + \left[a(z_2-z_1)-c(x_2-x_1)\right]^2 + \left[b(x_2-x_1)-a(y_2-y_1)\right]^2} {a^2 + b^2 + c^2 } } $$
+
+        The distance between two lines. First one through $P_1(x_1,y_1,z_1)$ in direction $(a_1,b_1,c_1)$, Second one: through $P_2(x_2,y_2,z_2)$ in direction $(a_2,b_2,c_2)$ is:
+        $$ d = \frac{ \begin{vmatrix} x_2-x_1 & y_2-y_1 & z_2-z_1 \\ a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \end{vmatrix} } { \sqrt{\begin{vmatrix} b_1 & c_1 \\ b_2 & c_2 \end{vmatrix}^2 + \begin{vmatrix} c_1 & a_1 \\ c_2 & a_2 \end{vmatrix}^2 + \begin{vmatrix} a_1 & b_1 \\ a_2 & b_2 \end{vmatrix}^2 }} $$
+
+        The two lines intersect if:
+        $$ \begin{vmatrix} x_2-x_1 & y_2 - y_1 & z_2 - z_1 \\ a_1 & b_1 & c_1 \\ a_2 & b_2 & c_2 \end{vmatrix} = 0$$
+        <hr style="width:100%">
+    </div>
+
+</div>
+</body>
+</html>

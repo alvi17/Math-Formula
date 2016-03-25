@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#89e8b0ff"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Set Identities"
+                android:id="@+id/textView"
+                android:layout_gravity="center_horizontal" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="#000"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Universal set : I or U"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Empty set: ∅"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Union of sets:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:text="A∪B={x:x∈A  or  x∈B}"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:background="#000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Intersection of sets:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:text="A∩B={x:x∈A  and  x∈B}"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:background="#000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Complement:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:text="A′={x∈U:x∉A}"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Difference of sets:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:text="A\\B={x:x∈A  and  x∉B}"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:background="#000"
+                />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Cartesian product:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:text="A×B={(x,y):x∈A  and  y∈B}"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:background="#000"
+                />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Set identities involving union:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:text="Commutativity:\n
+       \t A∪B=B∪A\n
+Associativity:\n
+      \t  A∪(B∪C)=(A∪B)∪C\n
+Idempotency:\n
+        \tA∪A=A"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:background="#000"
+                />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:textColor="#000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Set identities involving intersection:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:text="Commutativity:\n\t
+        A∩B=B∩A\n
+Associativity:\n\t
+        A∩(B∩C)=(A∩B)∩C\n
+Idempotency:\n\t
+        A∩A=A"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:background="#000"
+                />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Set identities involving union and intersection:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:text="Distributivity:\n\t
+        A∪(B∩C)=(A∪B)∩(A∪C)\n\t
+        A∩(B∪C)=(A∩B)∪(A∩C)\n
+Domination:\n\t
+        A∩∅=∅\n\t
+        A∪I=I\n
+Identity:\n\t
+        A∪∅=∅\n\t
+        A∩U=A"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:background="#000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Set identities involving union, intersection and complement:"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:text=" Complement of intersection and union:\n\t
+        A∪A′=I\n\t
+        A∩A′=∅\n
+
+De Morgan's laws:\n\t
+        (A∪B)′=A′∩B ′\n\t
+        (A∩B)′=A′∪B ′"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:background="#000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:text="Set identities involving difference: "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:text="B\\A=B\\(A∪B)\n
+B\\A=B∩A′\n
+A\\A=∅\n
+(A\\B)∩C=(A∩C)\\(B∩C)\n
+A′=I\\A"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="5dp"
+                android:background="#000"
+                />
+        </LinearLayout>
+
+
+
+        </ScrollView>
+</LinearLayout>

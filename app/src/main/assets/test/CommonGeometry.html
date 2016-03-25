@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+
+        $$ y = mx+b $$
+        $$ y^2 = 2\,p\,x $$
+        $$ C = \pi \cdot d = 2\cdot \pi \cdot r $$
+        $$ \frac{x^2}{a^2} - \frac{y^2}{b^2} = 1 $$
+        $$ \begin{aligned} x &= \frac{a}{\sin t} \\ y &= \frac{b\,\sin t}{\cos t} \end{aligned} $$
+        $$ e = \frac{\sqrt{a^2-b^2}}{a} $$
+        $$ \frac{x_0\,x}{a^2} + \frac{y_0\,y}{b^2} = 1 $$
+        $$ \begin{aligned} & \text{if}~a \geq b ~~then~~ F_1\left(-\sqrt{a^2-b^2},0\right)~~ F_2\left(\sqrt{a^2-b^2},0\right) \\ & \text{if}~a < b ~~then~~ F_1\left(0, -\sqrt{b^2-a^2}\right) ~~ F_2\left(0, \sqrt{b^2-a^2}\right) \end{aligned} $$
+        $$ \begin{aligned} & \text{if}~a \geq b ~~then~~ F_1\left(-\sqrt{a^2+b^2},0\right)~~ F_2\left(\sqrt{a^2+b^2},0\right) \\ & \text{if}~a < b ~~then~~ F_1\left(0, -\sqrt{a^2+b^2}\right) ~~ F_2\left(0, \sqrt{a^2+b^2}\right) \end{aligned} $$
+        $$ A = r^2\pi $$
+        <hr style="width:100%">
+    </div>
+</div>
+</body>
+</html>

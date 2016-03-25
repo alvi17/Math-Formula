@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+    <h3>Definitions:</h3>
+    <p align="center">
+    $ \mathbb{N} $ : Natural numbers
+<br>
+    $ \mathbb{N}_0 $ : Whole numbers
+    <br>
+    $ \mathbb{Z} $ : Set of Integers
+    <br>
+    $ \mathbb{Z}^+ $ : Positive integers
+    <br>
+    $ \mathbb{Z}^- $ : Negative integers
+    <br>
+    $ \mathbb{Q} $ : Rational numbers
+    <br>
+    $ \mathbb{C} $ : Complex numbers
+    <br>
+
+    <hr style="width:100%">
+    </p>
+    <h3>Formulas: </h3>
+    <p >
+        <h4>Natural numbers (counting numbers )</h4>
+        $$ \mathbb{N} = \left\{ 1, 2, 3, \dots \right\}$$
+    <hr style="width:70%">
+        <h4>Whole numbers ( counting numbers with zero )</h4>
+        $$ \mathbb{N}_0 = \left\{0, 1, 2, 3, \dots \right\}$$
+    <hr style="width:70%">
+        <h4>Integers ( whole numbers and their opposites and zero )</h4>
+        $$ \mathbb{Z} = \left\{ \dots , -2, -1, 0, 1, 2, \dots \right\}$$
+        $$ \mathbb{Z}^+ = \mathbb{N} = \left\{ 1, 2, \dots \right\}$$
+        $$ \mathbb{Z}^- = \left\{ \dots , -3, -2, -1 \right\}$$
+        $$ \mathbb{Z} = \mathbb{Z}^- \cup { 0 } \cup \mathbb{Z}$$
+    <hr style="width:70%">
+        <h4>Irrational numbers: </h4>Non repeating and nonterminating integers
+    <hr style="width:70%">
+        <h4>Real numbers:</h4> Union of rational and irrational numbers
+    <hr style="width:70%">
+        <h4>Complex numbers:</h4>
+        $$ \mathbb{C} = \left\{ x+iy ~|~ x \in \mathbb{R} ~~ and ~~ y \in \mathbb{R} \right\} $$
+        <h4>Set Relation:</h4>
+        $$ \mathbb{N} \subset \mathbb{N}_0 \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} $$
+    <hr style="width:70%">
+    </p>
+
+</div>
+    </div>
+</body>
+</html>

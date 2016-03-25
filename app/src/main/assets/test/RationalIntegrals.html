@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+   <h3>Integrals involving $ ax+b $</h3>
+        $$ \int (ax+b)^n dx = \frac{(ax+b)^{n+1}}{a(n+1)}, \quad (\text{for } n \ne 1) $$
+        $$ \int \frac{1}{ax+b}dx = \frac{1}{a}\ln|ax+b| $$
+        $$ \int x (ax+b)^ndx = \frac{a(n+1)x-b}{a^2(n+1)(n+2)}(ax+b)^{n+1}, \quad (\text{for } n \ne -1, n\ne-2) $$
+        $$ \int \frac{x}{ax+b}dx = \frac{x}{2} - \frac{b}{a^2}\ln|ax+b| $$
+        $$ \int \frac{x}{(ax+b)^2}dx = \frac{b}{a^2(ax+b)} - \frac{1}{a^2}\ln|ax+b| $$
+        $$ \int \frac{x^2}{ax+b} dx = \frac{1}{a^3} \left(\frac{(ax+b)^2}{2}-2b(ax+b)+b^2\ln|ax+b| \right) $$
+        $$ \int \frac{x^2}{(ax+b)^2} dx = \frac{1}{a^3} \left(ax+b-2\,b\,\ln|ax+b| - \frac{b^2}{ax+b}\right) $$
+        $$ \int \frac{x^2}{(ax+b)^3} dx = \frac{1}{a^3} \left( \ln|ax+b| + \frac{2b}{ax+b} - \frac{b^2}{2(ax+b)^2} \right) $$
+        $$ \int \frac{x^2}{(ax+b)^n} dx = \frac{1}{a^3} \left( -\frac{(ax+b)^{3-n}}{n-3} + \frac{2b(a+b)^{2-n}}{n-2} - \frac{b^2(ax+b)^{1-n}}{n-1}\right) $$
+        $$ \int \frac{1}{x(ax+b)}dx = -\frac{1}{b}\ln\left|\frac{ax+b}{x}\right| $$
+        $$ \int \frac{1}{x^2(ax+b)^2}dx = -\frac{1}{bx} + \frac{a}{b^2} \ln\left|\frac{ax+b}{x}\right|$$
+        $$ \int \frac{1}{x^2(ax+b)^2}dx = -a\left(\frac{1}{b^2(ax+b)} + \frac{1}{ab^2x} - \frac{2}{b^3}\ln\left|\frac{ax+b}{x} \right|\right) $$
+        <hr style="width:100%">
+
+        <h3>Integrals involving $ax^2 + bx + c$ </h3>
+        $$ \frac{1}{x^2+a^2} dx = \frac{1}{a}\arctan\frac{x}{a} $$
+        $$ \frac{1}{x^2 - a^2} dx = \frac{1}{2a} \ln\left| \frac{x-a}{x+a}\right|$$
+        $$ \int \frac{1}{ax^2 + bx + c} dx = \left\{ \begin{aligned} & \frac{2}{\sqrt{4ac - b^2}} \arctan \frac{2ax + b}{\sqrt{4ac-b^2}} \quad \text{for } 4ac - b^2 > 0 \\ & \frac{2}{\sqrt{b^2 - 4ac}} \ln \left| \frac{2ax + b - \sqrt{b^2-4ac}}{2ax + b + \sqrt{b^2-4ac}} \right| \quad \text{for } 4ac - b^2 < 0 \\ & -\frac{2}{2ax+b} \quad \text{for } 4ac - b^2 = 0 \end{aligned} \right. $$
+        $$ \int \frac{x}{ax^2 + bx +c} dx = \frac{1}{2a} \ln\left|ax^2+bx+c\right| - \frac{b}{2a}\int \frac{dx}{ax^2+bx+c} $$
+        $$ \int \frac{1}{(ax^2+bx+c)^n} dx = \frac{2ax+b}{(n-1)(4ac-b^2)(ax+bx+c)^{n-1}}+ \frac{2(2n-3)a}{(n-1)(4ac - b^2)}\int\frac{dx}{(ax^2+bx+c)^{n-1}} $$
+        $$ \int \frac{1}{x(ax^2 + bx + c)} dx = \frac{1}{2c}\ln\left|\frac{x^2}{ax^2+bx+c}\right| - \frac{b}{2c} \int \frac{1}{ax^2+bx+c}dx $$
+        <hr style="width:100%">
+
+    </div>
+
+</div>
+</body>
+</html>

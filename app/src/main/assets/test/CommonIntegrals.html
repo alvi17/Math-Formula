@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+   <h3>Indefinite Integral:</h3>
+        Method of substitution
+        $$ \int f\left(g(x)\right)\cdot \frac{d}{dx}g(x) dx = \int f(u) du $$
+
+        Integration by parts
+        $$ \int u\cdot v dx = u\frac{d}{dx}v - \int\left(\frac{d}{dx}u\int v dx\right)dx $$
+
+        <hr style="width:100%">
+        <h3>Integrals of Rational and Irrational Functions </h3>
+        $$ \int x^n dx = \frac{x^{n+1}}{n+1} + C , n \ne 1 $$
+        $$ \int \frac{1}{x} dx = \ln|x| + C $$
+        $$ \int c \, dx = c \cdot x + C $$
+        $$ \int x \, dx = \frac{x^2}{2} + C $$
+        $$ \int x^2 \, dx = \frac{x^3}{3} + C $$
+        $$ \int \frac{1}{x^2} dx = -\frac{1}{x} + C $$
+        $$ \int \sqrt{x} \, dx = \frac{2\cdot x \cdot \sqrt{x} }{3} + C $$
+        $$ \int \frac{1}{1+x^2} dx = \arctan x + C $$
+        $$ \int \frac{1}{\sqrt{1-x^2}} dx = \arcsin x + C $$
+        <hr style="width:100%">
+
+        <h3>Integrals of Trigonometric Functions </h3>
+        $$ \int \sin x\,dx = -\cos x + C $$
+        $$ \int \cos x\,dx = \sin x + C $$
+        $$ \int \tan x\,dx = \ln|\sec x| + C $$
+        $$ \int \sec x\,dx = \ln|\tan x + \sec x | + C $$
+        $$ \int \sin^2x\,dx = \frac{1}{2}(x-\sin x \cdot \cos x) + C $$
+        $$ \int \cos^2x\,dx = \frac{1}{2}(x + \sin x \cdot \cos x) + C $$
+        $$ \int \tan^2x\,dx = \tan x - x + C $$
+        $$ \int \sec^2x\,dx = \tan x + C $$
+        <hr style="width:100%">
+        <h3>Integrals of Exponential and Logarithmic Functions</h3>
+        $$ \int \ln x \,dx =x \cdot \ln x -x + C $$
+        $$ \int x^n \cdot \ln x \,dx =\frac{x^{n+1}}{n+1} \ln x - \frac{x^{n+1}}{(n+1)^2} + C $$
+        $$ \int e^x\,dx = e^x + C $$
+        $$ \int a^x\,dx = \frac{a^x}{\ln a} + C $$
+        <hr style="width:100%">
+    </div>
+
+</div>
+</body>
+</html>

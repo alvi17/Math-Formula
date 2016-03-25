@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+   <h3>Integrals of Hyperbolic Sine Functions </h3>
+
+        $$ \int\sinh ax\,dx = \frac{1}{a}\cosh ax+C\ $$
+        $$ \int\sinh^2 ax\,dx = \frac{1}{4a}\sinh 2ax - \frac{x}{2}+C\ $$
+        $$ i) \int\sinh^n ax\,dx = \frac{1}{an}\sinh^{n-1} ax\cosh ax - \frac{n-1}{n}\int\sinh^{n-2} ax\,dx \qquad\mbox{(for }n&gt;0\mbox{)}\ $$
+        $$ ii) \int\sinh^n ax\,dx = \frac{1}{a(n+1)}\sinh^{n+1} ax\cosh ax - \frac{n+2}{n+1}\int\sinh^{n+2}ax\,dx \qquad\mbox{(for }n&lt;0\mbox{, }n\neq -1\mbox{)}\ $$
+        $$ i) \int\frac{dx}{\sinh ax} = \frac{1}{a} \ln\left|\tanh\frac{ax}{2}\right|+C\  $$
+        $$ ii) \int\frac{dx}{\sinh ax} = \frac{1}{a} \ln\left|\frac{\cosh ax - 1}{\sinh ax}\right|+C\ $$
+        $$ \int\frac{dx}{\sinh ax} = \frac{1}{a} \ln\left|\frac{\sinh ax}{\cosh ax + 1}\right|+C\ $$
+        $$ \int\frac{dx}{\sinh ax} = \frac{1}{2a} \ln\left|\frac{\cosh ax - 1}{\cosh ax + 1}\right|+C\ $$
+        $$ \int\frac{dx}{\sinh^n ax} = -\frac{\cosh ax}{a(n-1)\sinh^{n-1} ax}-\frac{n-2}{n-1}\int\frac{dx}{\sinh^{n-2} ax} \qquad\mbox{(for }n\neq 1\mbox{)}\ $$
+        $$ \int x\sinh ax\,dx = \frac{1}{a} x\cosh ax - \frac{1}{a^2}\sinh ax+C\ $$
+        $$ \int \sinh ax \sinh bx\,dx = \frac{1}{a^2-b^2} (a\sinh bx \cosh ax - b\cosh bx \sinh ax)+C \qquad\mbox{(for }a^2\neq b^2\mbox{)}\ $$
+
+        <hr style="width:100%">
+        <h3>Integrals of Hyperbolic Cosine Functions</h3>
+
+        $$ \int\cosh ax\,dx = \frac{1}{a}\sinh ax+C\ $$
+        $$ \int\cosh^2 ax\,dx = \frac{1}{4a}\sinh 2ax + \frac{x}{2}+C\ $$
+        $$ i) \int\cosh^n ax\,dx = \frac{1}{an}\sinh ax\cosh^{n-1} ax + \frac{n-1}{n}\int\cosh^{n-2} ax\,dx \qquad\mbox{(for }n&gt;0\mbox{)}\ $$
+        $$ ii) \int\cosh^n ax\,dx = -\frac{1}{a(n+1)}\sinh ax\cosh^{n+1} ax + \frac{n+2}{n+1}\int\cosh^{n+2}ax\,dx \qquad\mbox{(for }n&lt;0\mbox{, }n\neq -1\mbox{)}\ $$
+        $$ i) \int\frac{dx}{\cosh ax} = \frac{2}{a} \arctan e^{ax}+C\ $$
+        $$ ii) \int\frac{dx}{\cosh ax} = \frac{1}{a} \arctan (\sinh ax)+C\ $$
+        $$ \int\frac{dx}{\cosh^n ax} = \frac{\sinh ax}{a(n-1)\cosh^{n-1} ax}+\frac{n-2}{n-1}\int\frac{dx}{\cosh^{n-2} ax} \qquad\mbox{(for }n\neq 1\mbox{)}\ $$
+        $$ \int x\cosh ax\,dx = \frac{1}{a} x\sinh ax - \frac{1}{a^2}\cosh ax+C\ $$
+        $$ \int x^2 \cosh ax\,dx = -\frac{2x \cosh ax}{a^2} + \left(\frac{x^2}{a}+\frac{2}{a^3}\right) \sinh ax+C\ $$
+        $$ \int \cosh ax \cosh bx\,dx = \frac{1}{a^2-b^2} (a\sinh ax \cosh bx - b\sinh bx \cosh ax)+C \qquad\mbox{(for }a^2\neq b^2\mbox{)}\ $$
+
+        <hr style="width:100%">
+        <h3>Integrals of Other Hyperbolic Functions</h3>
+        $$ \int \tanh x \, dx = \ln \cosh x + C $$
+        $$ \int\tanh^2 ax\,dx = x - \frac{\tanh ax}{a}+C\ $$
+        $$ \int \tanh^n ax\,dx = -\frac{1}{a(n-1)}\tanh^{n-1} ax+\int\tanh^{n-2} ax\,dx \qquad\mbox{(for }n\neq 1\mbox{)}\ $$
+        $$ \int \coth x \, dx = \ln| \sinh x | + C , \text{ for } x \neq 0 $$
+        $$ \int \coth^n ax\,dx = -\frac{1}{a(n-1)}\coth^{n-1} ax+\int\coth^{n-2} ax\,dx \qquad\mbox{(for }n\neq 1\mbox{)}\ $$
+        $$ \int \operatorname{sech}\,x \, dx = \arctan\,(\sinh x) + C $$
+        $$ \int \operatorname{csch}\,x \, dx = \ln\left| \tanh {x \over2}\right| + C , \text{ for } x \neq 0 $$
+
+        <hr style="width:100%">
+        <h3>Integrals Involving Sine and Cosine Hyperbolic</h3>
+
+        $$ \int \cosh ax \sinh bx\,dx = \frac{1}{a^2-b^2} (a\sinh ax \sinh bx - b\cosh ax \cosh bx)+C \qquad\mbox{(for }a^2\neq b^2\mbox{)}\ $$
+        $$ \int\frac{\cosh^n ax}{\sinh^m ax} dx = \frac{\cosh^{n-1} ax}{a(n-m)\sinh^{m-1} ax} + \frac{n-1}{n-m}\int\frac{\cosh^{n-2} ax}{\sinh^m ax} dx \qquad\mbox{(for }m\neq n\mbox{)}\ $$
+        $$ \int\frac{\cosh^n ax}{\sinh^m ax} dx = -\frac{\cosh^{n+1} ax}{a(m-1)\sinh^{m-1} ax} + \frac{n-m+2}{m-1}\int\frac{\cosh^n ax}{\sinh^{m-2} ax} dx \qquad\mbox{(for }m\neq 1\mbox{)}\ $$
+        $$ \int\frac{\cosh^n ax}{\sinh^m ax} dx = -\frac{\cosh^{n-1} ax}{a(m-1)\sinh^{m-1} ax} + \frac{n-1}{m-1}\int\frac{\cosh^{n-2} ax}{\sinh^{m-2} ax} dx \qquad\mbox{(for }m\neq 1\mbox{)}\ $$
+        $$ \int\frac{\sinh^m ax}{\cosh^n ax} dx = \frac{\sinh^{m-1} ax}{a(m-n)\cosh^{n-1} ax} + \frac{m-1}{n-m}\int\frac{\sinh^{m-2} ax}{\cosh^n ax} dx \qquad\mbox{(for }m\neq n\mbox{)}\ $$
+        $$ \int\frac{\sinh^m ax}{\cosh^n ax} dx = \frac{\sinh^{m+1} ax}{a(n-1)\cosh^{n-1} ax} + \frac{m-n+2}{n-1}\int\frac{\sinh^m ax}{\cosh^{n-2} ax} dx \qquad\mbox{(for }n\neq 1\mbox{)}\ $$
+        $$ \int\frac{\sinh^m ax}{\cosh^n ax} dx = -\frac{\sinh^{m-1} ax}{a(n-1)\cosh^{n-1} ax} + \frac{m-1}{n-1}\int\frac{\sinh^{m -2} ax}{\cosh^{n-2} ax} dx \qquad\mbox{(for }n\neq 1\mbox{)}\ $$
+
+
+        <hr style="width:100%">
+        <h3>Integrals of Hyperbolic and Trigonometric Functions</h3>
+
+        $$ \int \sinh (ax+b)\sin (cx+d)\,dx = \frac{a}{a^2+c^2}\cosh(ax+b)\sin(cx+d)-\frac{c}{a^2+c^2}\sinh(ax+b)\cos(cx+d)+C\ $$
+        $$ \int \sinh (ax+b)\cos (cx+d)\,dx = \frac{a}{a^2+c^2}\cosh(ax+b)\cos(cx+d)+\frac{c}{a^2+c^2}\sinh(ax+b)\sin(cx+d)+C\ $$
+        $$ \int \cosh (ax+b)\sin (cx+d)\,dx = \frac{a}{a^2+c^2}\sinh(ax+b)\sin(cx+d)-\frac{c}{a^2+c^2}\cosh(ax+b)\cos(cx+d)+C\ $$
+        $$ \int \cosh (ax+b)\cos (cx+d)\,dx = \frac{a}{a^2+c^2}\sinh(ax+b)\cos(cx+d)+\frac{c}{a^2+c^2}\cosh(ax+b)\sin(cx+d)+C\ $$
+
+
+        <hr style="width:100%">
+   </div>
+
+</div>
+</body>
+</html>

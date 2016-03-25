@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+   <h3>Basic formulas:</h3>
+        $$ \int^{\pi/2}_0 \sin^2x\,dx = \int^{\pi/2}_0 \cos^2x\,dx = \frac{\pi}{4} $$
+        $$\int^\infty_0 \frac{\sin(px)}{x} \,dx = \left\{ \begin{array}{l l l} \pi/2 & p > 0 \\ ~0 & p = 0 \\ -\pi/2 & p < 0 \\ \end{array} \right. $$
+        $$ \int^\infty_0 \frac{\sin^2px}{x^2} = \frac{\pi\,p}{2}$$
+        $$ \int^\infty_0 \frac{1 - \cos(px)}{x^2}dx = \frac{\pi\,p}{2}$$
+        $$ \int^\infty_0 \frac{\cos(px) - \cos(qx)}{x}dx = ln\frac{q}{p} $$
+        $$ \int^\infty_0 \frac{\cos(px) - \cos(qx)}{x^2}dx = \frac{\pi(q-p)}{2} $$
+        $$\int^{2\pi}_0 \frac{dx}{a + b\,\sin x} = \frac{2\pi}{\sqrt{a^2-b^2}}$$
+        $$\int^{2\pi}_0 \frac{dx}{a + b\,\cos(x)} = \frac{2\pi}{\sqrt{a^2-b^2}}$$
+        $$\int^\infty_0 \sin ax^2\,dx = \int^\infty_0 \cos(ax^2)\,dx = \frac{1}{2}\sqrt{\frac{\pi}{2a}} $$
+        $$\int^\infty_0 \frac{\sin x}{\sqrt{x}} dx = \int^\infty_0 \frac{\cos x}{\sqrt{x}} dx = \sqrt{\frac{\pi}{2}}$$
+        $$\int^\infty_0 \frac{\sin^3x}{x^3} dx = \frac{3\pi}{8}$$
+        $$\int^\infty_0 \frac{\sin^4x}{x^4} dx = \frac{\pi}{3}$$
+        $$\int^\infty_0 \frac{\tan x}{x} dx = \frac{\pi}{2}$$
+        $$\int^{\pi/2}_0 \frac{dx}{a + b\,\cos x} = \frac{\arccos(b/a)}{\sqrt{a^2-b^2}}$$
+        <hr style="width:100%">
+
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MathJax TeX Test Page</title>
+    <!-- Copyright (c) 2010-2015 The MathJax Consortium -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+      MathJax.Hub.Queue(function () {
+    document.getElementById("hide_page").style.visibility = "";
+  });
+
+</script>
+    <style>
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+
+        }
+    </style>
+    <script type="text/javascript" src="../MathJax.js?config=TeX-AMS_HTML-full"></script>
+
+</head>
+<body>
+<div id="hide_page" style="visibility:hidden">
+    <div class="center">
+        <h3>Exponential Formulas</h3>
+        $$ a^p = a \cdot a \cdot \dots a  ~~~( \text{if} ~~ p \in \mathbb{N} ) $$
+        $$ a^0 = 1 ~~~ (\text{if} ~~~ a \ne 0) $$
+        $$ a^r \cdot a^s = a^{r+s} $$
+        $$ \frac{a^r}{a^s} = a^{r-s} $$
+        $$ \left( a^r\right)^s = a^{r \cdot s} $$
+        $$ (a \cdot b)^r = a^r \cdot b^r $$
+        $$ \left( \frac{a}{b} \right)^r = \frac{a^r}{b^r} $$
+        $$ a^{-r} = \frac{1}{a^r} $$
+        $$ a^{\Large\frac{r}{s}} = \sqrt[\Large{s}]{a^r} $$
+
+
+    </div>
+
+
+
+
+</div>
+</body>
+</html>
